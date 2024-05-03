@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPT - Evaluation Rubric Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>OPT - Evaluation Rubric</h1>
+        <form id="evaluationForm">
+            <label for="student">Student:</label>
+            <input type="text" id="student" name="student" required>
+
+            <label for="mentor">Mentor:</label>
+            <input type="text" id="mentor" name="mentor" required>
+
+            <label for="score">Cambridge Online Assessment Score:</label>
+            <input type="number" id="score" name="score" required>
+
+            <p><strong>Fluency:</strong></p>
+            <select name="fluency" required>
+                <option value="5">5 - Speaks confidently and naturally</option>
+                <option value="3">3 - Hesitates several times, but generally knows the material</option>
+                <option value="1">1 - Many hesitations and difficulty remembering words</option>
+            </select>
+
+            <p><strong>Pronunciation:</strong></p>
+            <select name="pronunciation" required>
+                <option value="5">5 - Accurate pronunciation</option>
+                <option value="3">3 - Generally correct, but some incorrect inflections</option>
+                <option value="1">1 - Hard to understand</option>
+            </select>
+
+            <p><strong>Grammar:</strong></p>
+            <select name="grammar" required>
+                <option value="5">5 - No more incorrect grammar than a native speaker</option>
+                <option value="3">3 - Occasional misuse of grammar</option>
+                <option value="1">1 - Frequent grammar mistakes</option>
+            </select>
+
+            <p><strong>Vocabulary:</strong></p>
+            <select name="vocabulary" required>
+                <option value="5">5 - Sufficient vocabulary for understanding</option>
+                <option value="3">3 - Moderate vocabulary, sometimes needs help</option>
+                <option value="1">1 - Limited and/or incorrect vocabulary usage</option>
+            </select>
+
+            <p><strong>Content:</strong></p>
+            <select name="content" required>
+                <option value="5">5 - Knowledgeable about the subject</option>
+                <option value="3">3 - Provides some relevant ideas</option>
+                <option value="1">1 - Little or no understanding of the subject</option>
+            </select>
+
+            <label for="total">Total:</label>
+            <input type="text" id="total" name="total" value="0" readonly />
+
+            <label for="recommendedLevel">Recommended Level:</label>
+            <input type="text" id="recommendedLevel" name="recommendedLevel" required>
+
+            <label for="assessedBy">Assessed by:</label>
+            <input type="text" id="assessedBy" name="assessedBy" required>
+
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="placement" style="display:none;">
+            Thank you for your submission.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
